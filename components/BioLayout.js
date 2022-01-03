@@ -15,7 +15,7 @@ const BioLayout = ({ children }) => {
                 <meta name="description" content="A personal own-made bio page for connected to me!" />
                 <meta name="keywords" content="Freelance Web Developer, Fullstack Developer, Frontend Developer, Javascript Developer, React Developer, Next.Js Developer, GatsbyJs Developer" />
                 <meta name="robots" content="index, follow" />
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                 <meta name="language" content="English" />
                 <meta name="revisit-after" content="1 days" />
                 <meta name="author" content="Alfian Nahar" />
