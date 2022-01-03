@@ -4,7 +4,7 @@ const index = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen gap-4">
       <h1 className="text-5xl tracking-wide font-black">
-        Hi, I'm Alfian Nahar
+        Hi, I&apos;m Alfian Nahar
       </h1>
       <p className="font-medium tracking-widest text-xl">
         Full Stack Developer with minimal UI / UX skills
