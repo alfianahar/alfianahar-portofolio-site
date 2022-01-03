@@ -40,7 +40,7 @@ const BioLayout = ({ children }) => {
                     </div>
                 </div>
                 <BioFooter />
-                <div class="swiper-scrollbar"></div>
+                <div className="swiper-scrollbar"></div>
             </div>
         </>
     )
