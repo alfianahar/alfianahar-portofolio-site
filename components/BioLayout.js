@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Scrollbar, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Avatar from "./Avatar";
+import BioAboutMe from './BioAboutMe';
 import BioFooter from "./BioFooter";
 
 const BioLayout = ({ children }) => {
@@ -38,8 +39,13 @@ const BioLayout = ({ children }) => {
                     <p className="font-light mt-3 mb-10 tracking-widest leading-6">Full Stack Developer with <br /> Minimal UI/UX Design Skills</p>
                     {children}
                 </SwiperSlide>
-                <SwiperSlide className="bio-page">
-                    <Image src="/me-bg.png" alt="me" width={500} height={500} className="grayscale" />
+                <SwiperSlide className="bio-page overflow-y-auto justify-between">
+                    <div>
+                        <h3 className="text-2xl font-medium mt-4">About Me</h3>
+                        <h3 className="text-xl font-medium mt-4">Alfian Nahar</h3>
+                        <p className="font-light mt-3 mb-10 tracking-widest leading-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, aut ullam quaerat reprehenderit reiciendis itaque voluptate animi necessitatibus sapiente expedita possimus veritatis iure atque. Quidem nobis commodi voluptates facilis tempora.</p>
+                    </div>
+                    <BioAboutMe />
                 </SwiperSlide>
                 <BioFooter />
             </Swiper>
