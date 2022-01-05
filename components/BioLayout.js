@@ -28,7 +28,7 @@ const BioLayout = ({ children }) => {
                 slidesPerView={1}
                 navigation={{ prevEl: '.slidePrev-btn', nextEl: '.btn-nxt' }}
                 scrollbar={{ draggable: true }}
-                className="bio-background"
+                className="bio-background md:w-[32rem] md:h-[85%] mt-4 shadow-2xl shadow-[#d5ccff]/50 rounded-lg "
             >
                 <div className="bio-logo">
                     <Image src="/an-logo.svg" alt="logo AN" layout="responsive" width={100} height={68.92} />
