@@ -21,34 +21,36 @@ const BioLayout = ({ children }) => {
                 <meta name="revisit-after" content="1 days" />
                 <meta name="author" content="Alfian Nahar" />
             </Head>
-            <Swiper
-                // install Swiper modules
-                modules={[Scrollbar, Navigation]}
-                spaceBetween={0}
-                slidesPerView={1}
-                navigation={{ prevEl: '.slidePrev-btn', nextEl: '.btn-nxt' }}
-                scrollbar={{ draggable: true }}
-                className="bio-background md:w-[32rem] md:h-[85%] mt-4 shadow-2xl shadow-[#d5ccff]/50 rounded-lg "
-            >
-                <div className="bio-logo">
-                    <Image src="/an-logo.svg" alt="logo AN" layout="responsive" width={100} height={68.92} />
-                </div>
-                <SwiperSlide className="bio-page">
-                    <Avatar />
-                    <h3 className="text-xl font-medium mt-4">Alfian Nahar</h3>
-                    <p className="font-light mt-3 mb-10 tracking-widest leading-6">Full Stack Developer with <br /> Minimal UI/UX Design Skills</p>
-                    {children}
-                </SwiperSlide>
-                <SwiperSlide className="bio-page overflow-y-auto justify-between">
-                    <div>
-                        <h3 className="text-2xl font-medium mt-4">About Me</h3>
-                        <h3 className="text-xl font-medium mt-4">Alfian Nahar</h3>
-                        <p className="font-light mt-3 mb-10 tracking-widest leading-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, aut ullam quaerat reprehenderit reiciendis itaque voluptate animi necessitatibus sapiente expedita possimus veritatis iure atque. Quidem nobis commodi voluptates facilis tempora.</p>
+            <div className="flex items-center h-screen">
+                <Swiper
+                    // install Swiper modules
+                    modules={[Scrollbar, Navigation]}
+                    spaceBetween={0}
+                    slidesPerView={1}
+                    navigation={{ prevEl: '.slidePrev-btn', nextEl: '.btn-nxt' }}
+                    scrollbar={{ draggable: true }}
+                    className="bio-background "
+                >
+                    <div className="bio-logo">
+                        <Image src="/an-logo.svg" alt="logo AN" layout="responsive" width={100} height={68.92} />
                     </div>
-                    <BioAboutMe />
-                </SwiperSlide>
-                <BioFooter />
-            </Swiper>
+                    <SwiperSlide className="bio-page">
+                        <Avatar />
+                        <h3 className="text-xl font-medium mt-4">Alfian Nahar</h3>
+                        <p className="font-light mt-3 mb-10 tracking-widest leading-6">Full Stack Developer with <br /> Minimal UI/UX Design Skills</p>
+                        {children}
+                    </SwiperSlide>
+                    <SwiperSlide className="bio-page overflow-y-auto justify-between">
+                        <div>
+                            <h3 className="text-2xl font-medium mt-4">About Me</h3>
+                            <h3 className="text-xl font-medium mt-4">Alfian Nahar</h3>
+                            <p className="font-light mt-3 mb-10 tracking-widest leading-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, aut ullam quaerat reprehenderit reiciendis itaque voluptate animi necessitatibus sapiente expedita possimus veritatis iure atque. Quidem nobis commodi voluptates facilis tempora.</p>
+                        </div>
+                        <BioAboutMe />
+                    </SwiperSlide>
+                    <BioFooter />
+                </Swiper>
+            </div>
         </>
     )
 }
