@@ -27,7 +27,7 @@ const BioLayout = ({ children }) => {
                     modules={[Scrollbar, Navigation]}
                     spaceBetween={0}
                     slidesPerView={1}
-                    navigation={{ prevEl: '.slidePrev-btn', nextEl: '.btn-nxt' }}
+                    navigation={{ prevEl: '.slidePrev-btn', nextEl: '.bio-next' }}
                     scrollbar={{ draggable: true }}
                     className="bio-background "
                 >

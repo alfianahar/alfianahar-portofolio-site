@@ -20,7 +20,7 @@ const bio = ({ buttons }) => {
                 {
                     buttons.map(button => (
                         <Link href={button.target} key={button.id}>
-                            <a className="bio-button">
+                            <a className={`bio-button ${button.style}`}>
                                 <Image src={button.icon.img} alt={button.icon.alt} width={28} height={28} className="flex-none" />
                                 <p className="flex-grow font-medium text-[#1B1C22]">
                                     {button.title}
