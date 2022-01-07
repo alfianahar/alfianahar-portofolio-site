@@ -40,13 +40,13 @@ const BioLayout = ({ children }) => {
                         <p className="font-light mt-3 mb-10 tracking-widest leading-6">Full Stack Developer with <br /> Minimal UI/UX Design Skills</p>
                         {children}
                     </SwiperSlide>
-                    <SwiperSlide className="bio-page overflow-y-auto justify-between">
-                        <div>
+                    <SwiperSlide className="bio-page">
+                        <div className="overflow-y-auto">
                             <h3 className="text-2xl font-medium mt-4">About Me</h3>
                             <h3 className="text-xl font-medium mt-4">Alfian Nahar</h3>
-                            <p className="font-light mt-3 mb-10 tracking-widest leading-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, aut ullam quaerat reprehenderit reiciendis itaque voluptate animi necessitatibus sapiente expedita possimus veritatis iure atque. Quidem nobis commodi voluptates facilis tempora.</p>
+                            <p className="font-light mt-3 mb-10 tracking-widest leading-6">Energetic, confidence and eager to learn new skillset! Professional full-stack developer with a T-shaped shaped skillset </p>
+                            <BioAboutMe />
                         </div>
-                        <BioAboutMe />
                     </SwiperSlide>
                     <BioFooter />
                 </Swiper>
