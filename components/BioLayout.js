@@ -31,8 +31,11 @@ const BioLayout = ({ children }) => {
                     scrollbar={{ draggable: true }}
                     className="bio-background "
                 >
-                    <div className="bio-logo">
-                        <Image src="/an-logo.svg" alt="logo AN" layout="responsive" width={100} height={68.92} />
+                    <div className="absolute h-full w-full top-0">
+                        <div className="bio-logo">
+                            <Image src="/an-logo.svg" alt="logo AN"  width={520.05} height={409.03} className="-rotate-12" />
+                        </div>
+                        
                     </div>
                     <SwiperSlide className="bio-page">
                         <Avatar />

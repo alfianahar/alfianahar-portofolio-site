@@ -9,13 +9,13 @@
     @apply bg-[#14273E] h-screen md:w-[32rem] md:h-[85%] lg:h-[80%] tall:h-screen shadow-2xl shadow-[#EFEFF6]/50 md:rounded-xl;
   }
   .bio-logo {
-    @apply opacity-10 absolute -left-10 bottom-36 -rotate-12 w-[118vw] lg:w-screen block;
+    @apply opacity-10 py-12 h-full flex items-center lg:items-end ;
   }
   .bio-page {
     @apply w-screen px-6 pt-16 pb-14 font-semibold flex flex-col justify-start items-center text-center;
   }
   .bio-button {
-    @apply flex flex-row items-center text-center w-full h-12 p-3 rounded-xl bg-gradient-to-tr from-[#3E6BB5] to-[#7CB8FC] hover:bg-[#B0DCFE] hover:text-[#040C15] mb-6 shadow-lg shadow-[#173378]/30;
+    @apply flex flex-row items-center text-center w-full h-12 p-3 rounded-xl bg-gradient-to-tr from-[#7CB8FC] to-[#3E6BB5] hover:bg-[#B0DCFE] hover:text-[#040C15] mb-6 shadow-lg shadow-[#B0DCFE]/30;
   }
   .bio-main-layout {
     @apply overflow-y-auto h-[60%] w-full md:w-5/6 lg:w-4/6 flex flex-col;
