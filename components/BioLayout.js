@@ -42,12 +42,12 @@ const BioLayout = ({ children }) => {
                     </SwiperSlide>
                     <SwiperSlide className="bio-page">
                         <div className="overflow-y-auto">
-                            <div className="border-2 mt-3 border-dotted rounded-xl px-2">
+                            <div className="border-2 mt-3 border-dotted rounded-xl px-3">
                                 <div className="w-2/5 ">
-                                    <h5 className="z-10 rounded-xl text-lg font-mono text-center -mt-4 bg-[#22212c] text-[#839bec]">Hello, i am</h5>
+                                    <h5 className="z-10 rounded-xl text-lg font-mono text-center -mt-4 bg-[#14273E] text-[#7CB8FC]">Hello, i am</h5>
 
                                 </div>
-                                <h3 className="text-5xl font-semibold mt-4">Alfian Nahar</h3>
+                                <h3 className="text-5xl text font-semibold mt-4">Alfian Nahar</h3>
                                 <p className="font-light mt-4 mb-10 tracking-widest leading-6">Energetic, confidence and eager to learn new skillset! Professional full-stack developer with a motivation to build something awesome </p>
 
                             </div>
