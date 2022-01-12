@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import Avatar from "./Avatar";
 import BioAboutMe from './BioAboutMe';
 import BioFooter from "./BioFooter";
+import SocmedLink from './SocmedLink';
 
 const BioLayout = ({ children }) => {
 
@@ -51,9 +52,10 @@ const BioLayout = ({ children }) => {
 
                                 </div>
                                 <h3 className="text-5xl text font-semibold mt-4">Alfian Nahar</h3>
-                                <p className="font-light mt-4 mb-10 tracking-widest leading-6">Energetic, confidence and eager to learn new skillset! Professional full-stack developer with a motivation to build something awesome </p>
+                                <p className="font-light my-4 tracking-widest leading-6">Energetic, confidence and eager to learn new skillset! Professional full-stack developer with a motivation to build something awesome </p>
 
                             </div>
+                            <SocmedLink />
                             <BioAboutMe />
                         </div>
                     </SwiperSlide>
