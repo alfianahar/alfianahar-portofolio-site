@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
 const SocmedLink = () => {
     return (
         <div className="flex flex-row justify-center space-x-6 p-6 h-20">

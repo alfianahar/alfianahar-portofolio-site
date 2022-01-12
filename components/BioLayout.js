@@ -6,11 +6,17 @@ import Avatar from "./Avatar";
 import BioAboutMe from './BioAboutMe';
 import BioFooter from "./BioFooter";
 import SocmedLink from './SocmedLink';
+import Script from 'next/script'
+
 
 const BioLayout = ({ children }) => {
 
     return (
         <>
+            <Script
+                src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"
+                strategy="afterInteractive"
+            />
             <Head>
                 <title> Alfian Nahar | Biopage </title>
                 <meta name="title" content="Alfian Nahar" />
@@ -34,9 +40,8 @@ const BioLayout = ({ children }) => {
                 >
                     <div className="absolute h-full w-full top-0">
                         <div className="bio-logo">
-                            <Image src="/an-logo.svg" alt="logo AN"  width={520.05} height={409.03} className="-rotate-12" />
+                            <Image src="/an-logo.svg" alt="logo AN" width={520.05} height={409.03} className="-rotate-12" />
                         </div>
-                        
                     </div>
                     <SwiperSlide className="bio-page">
                         <Avatar />
@@ -49,11 +54,9 @@ const BioLayout = ({ children }) => {
                             <div className="border-2 mt-3 border-dotted rounded-xl px-3">
                                 <div className="w-2/5 ">
                                     <h5 className="z-10 rounded-xl text-lg font-mono text-center -mt-4 bg-[#14273E] text-[#7CB8FC]">Hello, i am</h5>
-
                                 </div>
                                 <h3 className="text-5xl text font-semibold mt-4">Alfian Nahar</h3>
                                 <p className="font-light my-4 tracking-widest leading-6">Energetic, confidence and eager to learn new skillset! Professional full-stack developer with a motivation to build something awesome </p>
-
                             </div>
                             <SocmedLink />
                             <BioAboutMe />

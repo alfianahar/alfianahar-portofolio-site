@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link"
 import BioLayout from "../components/BioLayout"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export const getStaticProps = async () => {
@@ -20,9 +20,10 @@ const bio = ({ buttons }) => {
                 {
                     buttons.map(button => (
                         <Link href={button.target} key={button.id}>
-                            <a className={`bio-button ${button.style}`}>
-                                <Image src={button.icon.img} alt={button.icon.alt} width={28} height={28} className="flex-none" />
-                                <p className="flex-grow font-medium text-[#1B1C22]">
+                            <a className={`bio-button text-[#040c15] ${button.style}`}>
+                                <box-icon type={button.icon.type} name={button.icon.name} color="#040c15" size="md"></box-icon>   
+                                <FontAwesomeIcon icon={[button.icon.style, button.icon.img]} className="flex-none text-[28px]" fixedWidth />                    
+                                <p className="flex-grow font-medium">
                                     {button.title}
                                 </p>
                             </a>
