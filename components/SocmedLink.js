@@ -1,22 +1,20 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 const SocmedLink = () => {
     return (
         <div className="flex flex-row justify-center space-x-6 p-6 h-20">
-            <a href="https://github.com/alfianahar" className="text-[#EFEFF6]">
-                <FontAwesomeIcon icon={['fab', 'github']} className="text-3xl hover:scale-110 hover:text-[#7CB8FC] hover:ease-out duration-300 transition" />
+            <a href="https://github.com/alfianahar" target="_blank" rel="noreferrer" className="hover:scale-125 hover:ease-out duration-300 transition">
+                <box-icon type='logo' name='github' color="#EFEFF6" size="md"></box-icon>
             </a>
-            <a href="https://www.linkedin.com/in/alfianahar/" className="text-[#EFEFF6]">
-                <FontAwesomeIcon icon={['fab', 'linkedin']} className="text-3xl hover:scale-110 hover:text-[#7CB8FC] hover:ease-out duration-300 transition" />
+            <a href="https://www.linkedin.com/in/alfianahar/" target="_blank" rel="noreferrer" className="hover:scale-125 hover:ease-out duration-300 transition">
+                <box-icon type='logo' name='linkedin' color="#EFEFF6" size="md"></box-icon>
             </a>
-            <a href="https://twitter.com/alfianahar" className="text-[#EFEFF6]">
-                <FontAwesomeIcon icon={['fab', 'twitter']} className="text-3xl hover:scale-110 hover:text-[#7CB8FC] hover:ease-out duration-300 transition" />
+            <a href="https://twitter.com/alfianahar" target="_blank" rel="noreferrer" className="hover:scale-125 hover:ease-out duration-300 transition">
+                <box-icon type='logo' name='twitter' color="#EFEFF6" size="md"></box-icon>
             </a>
-            <a href="https://www.tiktok.com/@alfianahar" className="text-[#EFEFF6]">
-                <FontAwesomeIcon icon={['fab', 'tiktok']} className="text-3xl hover:scale-110 hover:text-[#7CB8FC] hover:ease-out duration-300 transition" />
+            <a href="https://www.tiktok.com/@alfianahar" target="_blank" rel="noreferrer" className="hover:scale-125 hover:ease-out duration-300 transition">
+                <box-icon type='logo' name='tiktok' color="#EFEFF6" size="md"></box-icon>
             </a>
-            <a href="https://www.instagram.com/alfianahar/" className="text-[#EFEFF6]">
-                <FontAwesomeIcon icon={['fab', 'instagram']} className="text-3xl hover:scale-110 hover:text-[#7CB8FC] hover:ease-out duration-300 transition" />
+            <a href="https://www.instagram.com/alfianahar/" target="_blank" rel="noreferrer" className="hover:scale-125 hover:ease-out duration-300 transition">
+                <box-icon type='logo' name='instagram' color="#EFEFF6" size="md"></box-icon>
             </a>
         </div>
     )
