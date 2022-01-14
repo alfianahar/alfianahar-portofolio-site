@@ -2,10 +2,10 @@ import Head from 'next/head'
 import Image from "next/image";
 import { Scrollbar, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from 'swiper/react'
-import Avatar from "./Avatar";
+import Avatar from "../Avatar";
 import BioAboutMe from './BioAboutMe';
 import BioFooter from "./BioFooter";
-import SocmedLink from './SocmedLink';
+import SocmedLink from '../SocmedLink';
 import Script from 'next/script'
 
 
