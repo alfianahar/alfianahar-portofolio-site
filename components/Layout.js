@@ -1,4 +1,3 @@
-import Head from "next/document"
 import Script from "next/script"
 import Footer from "./Footer"
 
