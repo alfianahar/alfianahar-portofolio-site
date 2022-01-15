@@ -46,7 +46,8 @@ const BioLayout = ({ children }) => {
                     <SwiperSlide className="bio-page">
                         <Avatar />
                         <h3 className="text-xl font-medium mt-4">Alfian Nahar</h3>
-                        <p className="font-light mt-3 mb-10 tracking-widest leading-6">Full Stack Developer with <br /> Minimal UI/UX Design Skills</p>
+                        <p className="font-light mt-3 mb-3 tracking-widest leading-6">Full Stack Developer with <br /> Minimal UI/UX Design Skills</p>
+                        <SocmedLink />
                         {children}
                     </SwiperSlide>
                     <SwiperSlide className="bio-page">
@@ -58,7 +59,6 @@ const BioLayout = ({ children }) => {
                                 <h3 className="text-5xl text font-semibold mt-4">Alfian Nahar</h3>
                                 <p className="font-light my-4 tracking-widest leading-6">Energetic, motivated and eager to learn new skillset! Professional full-stack developer with a motivation to build something awesome </p>
                             </div>
-                            <SocmedLink />
                             <BioAboutMe />
                         </div>
                     </SwiperSlide>

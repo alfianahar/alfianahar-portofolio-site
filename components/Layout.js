@@ -1,6 +1,7 @@
 import Script from "next/script"
 import Footer from "./Footer"
 
+
 const Layout = ({ children }) => {
     return (
         <>

@@ -16,9 +16,9 @@ const bio = ({ buttons }) => {
             {
                 buttons.map(button => (
                     <Link href={button.target} key={button.id}>
-                        <a className={`bio-button ${button.style}`}>
+                        <a className={`button ${button.style}`}>
                             <box-icon type={button.icon.type} name={button.icon.name} color="#040c15" size="md"></box-icon>
-                            <p className="flex-grow font-medium">
+                            <p className="flex-grow">
                                 {button.title}
                             </p>
                         </a>
