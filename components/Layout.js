@@ -1,4 +1,3 @@
-import Script from "next/script"
 import Footer from "./Footer"
 import Head from "next/head"
 
@@ -6,10 +5,6 @@ import Head from "next/head"
 const Layout = ({ children }) => {
     return (
         <>
-            <Script
-                src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"
-                strategy="afterInteractive"
-            />
             <Head>
                 <title> Alfian Nahar</title>
                 <meta name="title" content="Alfian Nahar" />

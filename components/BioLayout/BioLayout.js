@@ -6,17 +6,12 @@ import Avatar from "../Avatar";
 import BioAboutMe from './BioAboutMe';
 import BioFooter from "./BioFooter";
 import SocmedLink from '../SocmedLink';
-import Script from 'next/script'
 
 
 const BioLayout = ({ children }) => {
 
     return (
         <>
-            <Script
-                src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"
-                strategy="afterInteractive"
-            />
             <Head>
                 <title> Alfian Nahar | Biopage </title>
                 <meta name="title" content="Alfian Nahar" />
@@ -40,7 +35,7 @@ const BioLayout = ({ children }) => {
                 >
                     <div className="absolute h-full w-full top-0">
                         <div className="bio-logo">
-                            <Image src="/an-logo.svg" alt="logo AN" width={520.05} height={409.03} className="-rotate-12" />
+                            <Image src="/an-logo.svg" alt="logo AN" width={520.05} height={409.03} />
                         </div>
                     </div>
                     <SwiperSlide className="bio-page">
