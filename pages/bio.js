@@ -12,7 +12,7 @@ export const getStaticProps = async () => {
 
 const bio = ({ buttons }) => {
     return (
-        <div className="bio-main-layout">
+        <div className="bio-main-layout items-center">
             {
                 buttons.map(button => (
                     <Link href={button.target} key={button.id}>

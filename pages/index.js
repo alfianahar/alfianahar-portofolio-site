@@ -1,12 +1,8 @@
 import Link from 'next/link'
-import Head from 'next/head'
 
 const index = () => {
   return (
     <>
-      <Head>
-        <title> Alfian Nahar </title>
-      </Head>
       <div className="flex flex-col items-center justify-center h-screen gap-4">
         <h1 className="text-4xl leading-relaxed font-black text-center tracking-widest">
           Hi, I&apos;m <br /> Alfian Nahar

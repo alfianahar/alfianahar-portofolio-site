@@ -21,7 +21,7 @@ const BioLayout = ({ children }) => {
                 <title> Alfian Nahar | Biopage </title>
                 <meta name="title" content="Alfian Nahar" />
                 <meta name="description" content="A personal own-made bio page for connected to me!" />
-                <meta name="keywords" content="Freelance Web Developer, Fullstack Developer, Frontend Developer, Javascript Developer, React Developer, Next.Js Developer, GatsbyJs Developer" />
+                <meta name="keywords" content="Alfian, Alfian Nahar, Freelance Web Developer, Fullstack Developer, Frontend Developer, Javascript Developer, React Developer, Next.Js Developer, GatsbyJs Developer" />
                 <meta name="robots" content="index, follow" />
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                 <meta name="language" content="English" />
