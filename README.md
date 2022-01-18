@@ -2,7 +2,7 @@
 
 <p align="center">This is my portofolio site and bio page... <br />
 Every update of my projets or experience will written here</p>
-<a align="center" href="https://alfianahar-portofolio-site.vercel.app/bio" target="_blank"> My Bio Page </a>
+<a align="center" href="https://alfianahar,com" target="_blank"> My Bio Page </a>
 
 ## Built With
 
@@ -19,7 +19,7 @@ Every update of my projets or experience will written here</p>
     - [x] Footer (maybe need improvement)
     - [ ] Hero Section
     - [ ] Project Section
-- [ ] Domain
+- [x] Domain
 
 ## Author
 
@@ -27,7 +27,7 @@ Every update of my projets or experience will written here</p>
 
 - [Profile](https://github.com/alfianahar "Alfian Nahar")
 - [Email](mailto:alfian.aswinda@gmail.com? "Hi!")
-- [Website](https://alfianahar-portofolio-site.vercel.app/bio "Welcome")
+- [Website](https://alfianahar.com/bio "Welcome")
 
 ### 🤝 Support
 

@@ -49,11 +49,12 @@ const Navbar = () => {
     return (
         <nav className="flex items-center justify-between w-full h-10">
           <div className="w-11">
-            <Image src="/an-logo-blue.svg" alt="logo AN" width={100} height={68.92} className=""/>
+            <a href="/" rel="noreferrer" aria-label="home">
+              <Image src="/an-logo-blue.svg" alt="logo AN" width={100} height={68.92} className=""/>
+            </a>
           </div>
           <div className="-mr-2">
-            <box-icon name="menu-alt-right" color="#7CB8FC" size="60px"></box-icon>
-
+            <box-icon name="menu-alt-right" color="#7CB8FC" size="48px"></box-icon>
           </div>
         </nav>
     )
