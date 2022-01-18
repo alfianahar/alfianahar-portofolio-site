@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image";
 
-function useOnClickOutside(ref, handler) {
+// function useOnClickOutside(ref, handler) {
 //     useEffect(
 //       () => {
 //         const listener = (event) => {
@@ -47,8 +47,8 @@ const Navbar = () => {
     //   }, [scrolled]);
 
     return (
-        <nav data-active={scrolled} ref={ref} className="flex items-center justify-between w-full h-14">
-          <div className="w-14">
+        <nav className="flex items-center justify-between w-full h-10">
+          <div className="w-11">
             <Image src="/an-logo-blue.svg" alt="logo AN" width={100} height={68.92} className=""/>
           </div>
           <div className="-mr-2">

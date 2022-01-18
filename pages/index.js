@@ -11,7 +11,7 @@ const index = () => {
           Energetic and Motivated Full Stack Developer
         </p>
         <Link href="/bio" >
-          <a className="button">
+          <a className="button w-2/4">
             Back to My Bio
           </a>
         </Link>
