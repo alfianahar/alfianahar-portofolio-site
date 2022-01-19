@@ -37,7 +37,7 @@ const bio = ({ buttons }) => {
                 <meta property="twitter:url" content="https://www.alfianahar.com/" />
                 <meta property="twitter:title" content="Alfian Nahar | Fullstack Developer | Indonesia" />
                 <meta property="twitter:description" content="A personal own-made bio page for connected to me! Just Someone who can work on in front or back. Sometimes design UI too. Just teach me by challenging me for a work!" />
-                <meta property="twitter:image" content="/og.jpg" />
+                <meta property="twitter:image" content="https://www.alfianahar.com/og.jpg" />
             </Head>
             <div className="bio-main-layout items-center">
                 {
