@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image";
+import Link from "next/link";
 
 // function useOnClickOutside(ref, handler) {
 //     useEffect(
@@ -49,9 +50,11 @@ const Navbar = () => {
     return (
         <nav className="flex items-center justify-between w-full h-10">
           <div className="w-11">
-            <a href="/" rel="noreferrer" aria-label="home">
-              <Image src="/an-logo-blue.svg" alt="logo AN" width={100} height={68.92} className=""/>
-            </a>
+            <Link href="/">
+              <a>
+                <Image src="/an-logo-blue.svg" alt="logo AN" width={100} height={68.92} className=""/>
+              </a>
+            </Link>
           </div>
           <div className="-mr-2">
             <box-icon name="menu-alt-right" color="#7CB8FC" size="48px"></box-icon>
