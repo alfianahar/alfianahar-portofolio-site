@@ -22,14 +22,14 @@ const Layout = ({ children }) => {
                 <meta property="og:url" content="https://www.alfianahar.com/" />
                 <meta property="og:title" content="Alfian Nahar | Fullstack Developer | Indonesia" />
                 <meta property="og:description" content="A personal portfolio page for connected to me! Just Someone who can work on in front or back. Sometimes design UI too. Just teach me by challenging me for a work!" />
-                <meta property="og:image" content="/metaimage.jpg" />
+                <meta property="og:image" content="/og.jpg" />
 
                 {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://www.alfianahar.com/" />
                 <meta property="twitter:title" content="Alfian Nahar | Fullstack Developer | Indonesia" />
                 <meta property="twitter:description" content="A personal portfolio page for connected to me! Just Someone who can work on in front or back. Sometimes design UI too. Just teach me by challenging me for a work!" />
-                <meta property="twitter:image" content="/metaimage.jpg" />
+                <meta property="twitter:image" content="/og.jpg" />
             </Head>
             <header className="z-50 fixed flex justify-center items-center px-6 md:px-12 h-24 w-full">
                 <Navbar />
