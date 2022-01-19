@@ -2,7 +2,7 @@
 
 <p align="center">This is my portofolio site and bio page... <br />
 Every update of my projets or experience will written here</p>
-<a align="center" href="https://alfianahar,com" target="_blank"> My Bio Page </a>
+<a align="center" href="https://alfianahar.com" target="_blank"> My Bio Page </a>
 
 ## Built With
 
