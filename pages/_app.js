@@ -3,11 +3,13 @@ import Layout from '../components/Layout'
 import '../styles/globals.css'
 import '../styles/swiper.css'
 import Script from 'next/script'
+import Image from 'next/image'
 
 function MyApp({ Component, pageProps, router }) {
   if (router.pathname.startsWith('/bio')) {
     return (
       <BioLayout>
+        <Image src="/og.jpg" width={1200} height={628} className="hidden" />
         <Script
           src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"
           strategy="afterInteractive"
@@ -19,6 +21,7 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
     <Layout>
+      <Image src="/og.jpg" width={1200} height={628} className="hidden" />
       <Script
         src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"
         strategy="afterInteractive"
