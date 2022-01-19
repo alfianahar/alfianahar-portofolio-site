@@ -30,7 +30,7 @@ const bio = ({ buttons }) => {
                 <meta property="og:url" content="https://www.alfianahar.com/" />
                 <meta property="og:title" content="Alfian Nahar | Fullstack Developer | Indonesia" />
                 <meta property="og:description" content="A personal own-made bio page for connected to me! Just Someone who can work on in front or back. Sometimes design UI too. Just teach me by challenging me for a work!" />
-                <meta property="og:image" content="/og.jpg" />
+                <meta property="og:image" content="https://www.alfianahar.com/og.jpg" />
 
                 {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image" />

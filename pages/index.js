@@ -20,7 +20,7 @@ const index = () => {
         <meta property="og:url" content="https://www.alfianahar.com/" key="ogurl"/>
         <meta property="og:title" content="Alfian Nahar | Fullstack Developer | Indonesia" key="ogtitle"/>
         <meta property="og:description" content="A personal portfolio page for connected to me! Just Someone who can work on in front or back. Sometimes design UI too. Just teach me by challenging me for a work!" key="ogdesc"/>
-        <meta property="og:image" content="/og.jpg" key="ogimg"/>
+        <meta property="og:image" content="https://www.alfianahar.com/og.jpg" key="ogimg"/>
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
