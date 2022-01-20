@@ -30,10 +30,10 @@ const index = () => {
         <meta property="twitter:image" content="https://www.alfianahar.com/og.jpg" />
       </Head>
       <div className="flex flex-col items-center justify-center h-screen">
-        <span className="text-lg font-mono font-semibold text-left mb-3">
+        <span className="text-lg font-mono font-medium text-left mb-3">
           Hello, I&apos;m
         </span>
-        <h1 className="text-4xl font-black text-center tracking-widest">
+        <h1 className="text-6xl font-semibold text-center ">
           Alfian Nahar
         </h1>
         <p className="font-normal tracking-widest text-md text-center mt-3">

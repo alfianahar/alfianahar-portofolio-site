@@ -24,9 +24,7 @@
 }
 
 * {
-  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -35,6 +33,7 @@
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   background-color: #14273E;
   color: #EFEFF6;
 }

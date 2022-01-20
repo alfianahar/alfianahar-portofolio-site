@@ -10,8 +10,8 @@ const Layout = ({ children }) => {
             </header>
             <div className="flex flex-col items-center justify-center h-screen gap-4 p-6">
                 {children}
-                <Footer />
             </div>
+            <Footer />
         </>
     )
 }
