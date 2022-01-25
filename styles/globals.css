@@ -19,7 +19,7 @@
     @apply overflow-y-auto h-[60%] p-1 w-full md:w-5/6 lg:w-4/6 flex flex-col;
   }
   .button {
-    @apply flex flex-row items-center justify-center text-center font-medium w-full h-12 p-3 rounded-xl bg-gradient-to-tr text-[#040c15] from-[#7CB8FC] to-[#3E6BB5] hover:ring-4 transition duration-300 ease-out mb-6 shadow-lg shadow-[#3E6BB5]/40;
+    @apply flex flex-row items-center justify-center text-center font-medium w-full h-12 p-3 rounded-xl bg-gradient-to-tr text-[#040c15] from-[#7CB8FC] to-[#3E6BB5] hover:ring-4 transition ease-out mb-6 shadow-lg shadow-[#3E6BB5]/40;
   }
   .button-resume {
     @apply border-2 border-[#7CB8FC] text-[#7CB8FC] rounded-lg text-lg py-4 px-8 lg:py-2 lg:px-4 lg:text-sm font-mono hover:bg-[#3E6BB5]/20 transition transition-ease-out;
@@ -43,19 +43,19 @@
     @apply relative opacity-100 translate-x-0 h-full inline-flex flex-row space-x-10 text-sm space-y-0 py-0 items-center justify-end;
   }
   .navbar-side-active {
-    @apply flex flex-col justify-center items-center space-y-10 transition duration-300 ease-out h-screen bg-[#14273E] fixed right-0 top-0 py-10 w-3/4 md:w-2/4 -translate-x-0 text-lg shadow-[-10px_0px_25px_-15px_#3E6BB5];
+    @apply flex flex-col justify-center items-center space-y-10 transition ease-out h-screen bg-[#14273E] fixed right-0 top-0 py-10 w-3/4 md:w-2/4 -translate-x-0 text-lg shadow-[-10px_0px_25px_-15px_#3E6BB5];
   }
   .navbar-side-close {
-    @apply flex flex-col justify-center items-center space-y-10 duration-300 ease-out h-screen bg-[#14273E] fixed right-0 top-0 py-10 w-full translate-x-full text-lg ;
+    @apply flex flex-col justify-center items-center space-y-10 ease-out h-screen bg-[#14273E] fixed right-0 top-0 py-10 w-full translate-x-full text-lg ;
   }
   .blur-effect {
-    @apply w-screen h-screen backdrop-blur-sm absolute inset-0 bg-[#0a162c]/70 transition-all duration-300 ease-linear;
+    @apply w-screen h-screen backdrop-blur-sm absolute inset-0 bg-[#0a162c]/70 transition-all ease-linear;
   }
   .icon-transition {
     @apply transition duration-300 ease-out opacity-0;
   }
   .transition-ease-out {
-    @apply duration-300 ease-out;
+    @apply ease-out;
   }
 }
 
