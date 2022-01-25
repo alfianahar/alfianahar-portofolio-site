@@ -34,22 +34,25 @@
     @apply flex flex-col justify-center items-center p-4;
   }
   .navbar {
-    @apply flex items-center justify-between w-full h-10;
+    @apply flex items-center justify-between w-full h-10 font-mono;
   }
   .navbar-logo {
     @apply w-12 h-12 rounded-full bg-gradient-to-tr from-[#7CB8FC] to-[#3E6BB5] flex items-center;
   }
   .navbar-side {
-    @apply lg:relative lg:opacity-100 lg:translate-x-0 lg:h-full lg:inline-flex lg:flex-row lg:space-x-10 lg:text-sm lg:space-y-0 lg:py-0 font-mono items-center lg:justify-end;
+    @apply relative opacity-100 translate-x-0 h-full inline-flex flex-row space-x-10 text-sm space-y-0 py-0 items-center justify-end;
   }
   .navbar-side-active {
-    @apply flex flex-col justify-center space-y-10 transition duration-300 ease-out h-screen bg-[#14273E] fixed right-0 top-0 py-10 w-3/4 md:w-2/4 -translate-x-0 text-lg shadow-[-10_0px_25px_-5px_rgb(0,0,0/0.3)];
+    @apply flex flex-col justify-center items-center space-y-10 transition duration-300 ease-out h-screen bg-[#14273E] fixed right-0 top-0 py-10 w-3/4 md:w-2/4 -translate-x-0 text-lg shadow-[-10px_0px_25px_-15px_#3E6BB5];
   }
   .navbar-side-close {
-    @apply flex flex-col justify-center space-y-10 duration-300 ease-out h-screen fixed opacity-0 right-0 top-0 py-10 w-full translate-x-full text-lg;
+    @apply flex flex-col justify-center items-center space-y-10 duration-300 ease-out h-screen bg-[#14273E] fixed right-0 top-0 py-10 w-full translate-x-full text-lg ;
   }
   .blur-effect {
     @apply w-screen h-screen backdrop-blur-sm absolute inset-0 bg-[#0a162c]/70 transition-all duration-300 ease-linear;
+  }
+  .icon-transition {
+    @apply transition duration-300 ease-out opacity-0;
   }
   .transition-ease-out {
     @apply duration-300 ease-out;

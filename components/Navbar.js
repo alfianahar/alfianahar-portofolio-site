@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className={`${open ? "blur-effect" : "hidden" }`}></div>
+      <div className={`${open ? "blur-effect" : "opacity-0 absolute" }`}></div>
       <div className="w-11 inline-flex z-50">
         <Link href="/" >
           <a className="navbar-logo" onClick={closeMenu}>
@@ -59,15 +59,15 @@ const Navbar = () => {
       </div>
       <div ref={ref} className="h-full relative">
         <div className="-mr-2 relative z-50 lg:hidden" onClick={handleClick}>
-          <div className={`${open ? "transition transition-ease-out -translate-x-12 opacity-0" : "transition-ease-out"} absolute right-0`}>
+          <div className={`${open ? "icon-transition -translate-x-12" : "transition-ease-out"} absolute right-0`}>
             <box-icon name="menu" color="#7CB8FC" size="48px" ></box-icon>
           </div>
-          <div className={`${open ? "transition-ease-out" : "transition transition-ease-out translate-x-12 opacity-0"} absolute right-0`}>
+          <div className={`${open ? "transition-ease-out" : "icon-transition translate-x-12"} absolute right-0`}>
             <box-icon name='x' color="#7CB8FC" size="48px"></box-icon>
           </div>
         </div>
         
-        <div ref={ref} data-active={scrolled} className={`${open ? "navbar-side-active" : "navbar-side-close" } navbar-side`}>
+        <div ref={ref} data-active={scrolled} className={`${open ? "navbar-side-active" : "navbar-side-close" } lg:navbar-side`}>
           <Link href="">
             <a onClick={handleClick}>
               About Me
