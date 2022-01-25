@@ -56,17 +56,17 @@ const Navbar = () => {
           </a>
         </Link>
       </div>
-      <div className="h-full">
-        <div className="-mr-2 lg:hidden relative" onClick={handleClick}>
-          <div className={`${open ? "transition-opacity duration-300 ease-out opacity-0" : ""} absolute right-0`}>
-            <box-icon name="menu-alt-right" color="#7CB8FC" size="48px" ></box-icon>
+      <div className="h-full relative">
+        <div className="-mr-2 lg:hidden relative z-50" onClick={handleClick}>
+          <div className={`${open ? "transition duration-300 ease-out -translate-x-12 opacity-0" : "duration-300 ease-out"} absolute right-0`}>
+            <box-icon name="menu" color="#7CB8FC" size="48px" ></box-icon>
           </div>
-          <div className={`${open ? "" : "transition-opacity duration-300 ease-out opacity-0"} absolute right-0`}>
+          <div className={`${open ? "duration-300 ease-out" : "transition duration-300 ease-out translate-x-12 opacity-0"} absolute right-0`}>
             <box-icon name='x' color="#7CB8FC" size="48px"></box-icon>
           </div>
         </div>
         
-        <div className="hidden lg:inline-flex lg:space-x-10 text-sm font-mono items-center">
+        <div className={`${open ? "flex flex-col justify-center space-y-10 transition duration-300 ease-out h-screen bg-orange-700 fixed right-0 top-0 py-10 w-3/4 md:w-2/4 -translate-x-0 text-lg shadow-lg" : "flex flex-col justify-center space-y-10 duration-300 ease-out h-screen fixed opacity-0 right-0 top-0 py-10 w-full translate-x-full text-lg" } lg:relative lg:opacity-100 lg:translate-x-0 lg:h-full lg:inline-flex lg:flex-row lg:space-x-10 lg:text-sm lg:space-y-0 lg:py-0 font-mono items-center lg:justify-end`}>
           <Link href="">
             <a>
               About Me
@@ -83,7 +83,7 @@ const Navbar = () => {
             </a>
           </Link>
         <Link href="/alfianahar-resume.pdf" >
-          <a target="_blank" className="border-2 border-[#7CB8FC] text-[#7CB8FC] rounded-lg py-2 px-4 text-sm font-mono hover:bg-[#3E6BB5]/20 transition duration-300 ease-out hidden lg:block ">
+          <a target="_blank" className="border-2 border-[#7CB8FC] text-[#7CB8FC] rounded-lg py-2 px-4 text-sm font-mono hover:bg-[#3E6BB5]/20 transition duration-300 ease-out ">
             My Resume
           </a>
         </Link>
