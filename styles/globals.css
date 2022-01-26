@@ -52,10 +52,10 @@
     @apply flex flex-col justify-center items-center space-y-10 ease-out h-screen bg-[#14273E] fixed right-0 top-0 py-10 w-full translate-x-full text-lg ;
   } */
   .blur-effect {
-    @apply w-screen h-screen backdrop-blur-sm absolute inset-0 bg-[#0a162c]/70 transition-all ease-linear;
+    @apply w-screen h-screen backdrop-blur-sm absolute inset-0 bg-[#0a162c]/70 transition ease-linear;
   }
   .icon-transition {
-    @apply transition duration-300 ease-out opacity-0;
+    @apply transform transition duration-300 ease-out absolute right-0;
   }
   .transition-ease-out {
     @apply ease-out duration-300;

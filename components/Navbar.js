@@ -59,10 +59,10 @@ const Navbar = () => {
       </div>
       <div ref={ref} className="h-full relative">
         <div className="-mr-2 relative z-50 lg:hidden" onClick={handleClick}>
-          <div className={`${open ? "icon-transition -translate-x-12" : "transition-ease-out"} absolute right-0`}>
+          <div className={`${open ? "-translate-x-12 opacity-0" : "transition-ease-out"} icon-transition`}>
             <box-icon name="menu" color="#7CB8FC" size="48px" ></box-icon>
           </div>
-          <div className={`${open ? "transition-ease-out" : "icon-transition translate-x-12"} absolute right-0`}>
+          <div className={`${open ? "transition-ease-out" : "translate-x-12 opacity-0"} icon-transition`}>
             <box-icon name='x' color="#7CB8FC" size="48px"></box-icon>
           </div>
         </div>
