@@ -40,10 +40,10 @@
     @apply w-12 h-12 rounded-full bg-gradient-to-tr from-[#7CB8FC] to-[#3E6BB5] flex items-center;
   }
   .navbar-side {
-    @apply transform flex flex-col justify-center items-center space-y-10 transition duration-300 ease-in-out h-screen bg-[#14273E] fixed right-0 top-0 py-10 w-3/4 md:w-2/4 -translate-x-0 text-lg shadow-[-10px_0px_25px_-15px_#3E6BB5];
+    @apply transform transform-gpu flex flex-col justify-center items-center space-y-10 transition duration-300 ease-in-out h-screen bg-[#14273E] fixed right-0 top-0 py-10 w-3/4 md:w-2/4 -translate-x-0 text-lg shadow-[-10px_0px_25px_-15px_#3E6BB5];
   }
   .navbar-side-lg {
-    @apply relative opacity-100 translate-x-0 h-full inline-flex flex-row space-x-10 text-sm space-y-0 py-0 items-center justify-end w-full;
+    @apply relative translate-x-0 h-full inline-flex flex-row space-x-10 text-sm space-y-0 py-0 items-center justify-end w-full shadow-none bg-none;
   }
   /* .navbar-side-active {
     @apply flex flex-col justify-center items-center space-y-10 transition ease-out h-screen bg-[#14273E] fixed right-0 top-0 py-10 w-3/4 md:w-2/4 -translate-x-0 text-lg shadow-[-10px_0px_25px_-15px_#3E6BB5];
@@ -58,7 +58,7 @@
     @apply transition duration-300 ease-out opacity-0;
   }
   .transition-ease-out {
-    @apply ease-out;
+    @apply ease-out duration-300;
   }
 }
 

@@ -69,17 +69,17 @@ const Navbar = () => {
         
         <aside ref={ref} data-active={scrolled} className={`${open ? "-translate-x-0" : "translate-x-[150%]" } navbar-side lg:navbar-side-lg`}>
           <Link href="">
-            <a onClick={handleClick} className="">
+            <a onClick={closeMenu} className="">
               About Me
             </a>
           </Link>
           <Link href="">
-            <a onClick={handleClick} className="">
+            <a onClick={closeMenu} className="">
               My Work
             </a>
           </Link>
           <Link href="">
-            <a onClick={handleClick} className="">
+            <a onClick={closeMenu} className="">
               Contact Me
             </a>
           </Link>
