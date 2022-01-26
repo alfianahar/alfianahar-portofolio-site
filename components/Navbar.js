@@ -67,19 +67,19 @@ const Navbar = () => {
           </div>
         </div>
         
-        <div ref={ref} data-active={scrolled} className={`${open ? "navbar-side-active" : "navbar-side-close" } lg:navbar-side`}>
+        <aside ref={ref} data-active={scrolled} className={`${open ? "-translate-x-0" : "translate-x-[150%]" } navbar-side lg:navbar-side-lg`}>
           <Link href="">
-            <a onClick={handleClick}>
+            <a onClick={handleClick} className="">
               About Me
             </a>
           </Link>
           <Link href="">
-            <a onClick={handleClick}>
+            <a onClick={handleClick} className="">
               My Work
             </a>
           </Link>
           <Link href="">
-            <a onClick={handleClick}>
+            <a onClick={handleClick} className="">
               Contact Me
             </a>
           </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
             My Resume
           </a>
         </Link>
-        </div>
+        </aside>
       </div>
     </nav>
   )
