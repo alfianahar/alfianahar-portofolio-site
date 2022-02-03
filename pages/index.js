@@ -5,7 +5,7 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Alfian Nahar </title>
+        <title>Alfian Nahar - Full Stack Developer </title>
         <meta name="title" content="Alfian Nahar | Fullstack Developer | Indonesia" />
         <meta name="description" content="A personal portfolio page for connected to me! Just Someone who can work on in front or back. Sometimes design UI too. Just teach me by challenging me for a work!" />
         <meta name="keywords" content="Alfian, Alfian Nahar, Freelance Web Developer, Fullstack Developer, Frontend Developer, Javascript Developer, React Developer, Next.Js Developer, GatsbyJs Developer" />
@@ -41,7 +41,7 @@ const index = () => {
         </p>
         <Link href="/bio" >
           <a className="button w-2/4 mt-12">
-            Back to My Bio
+            Go to My Bio
           </a>
         </Link>
       </div>
