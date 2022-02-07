@@ -1,5 +1,5 @@
-import Link from "next/link"
 import Head from "next/head"
+import Hero from "../components/Hero"
 
 const index = () => {
   return (
@@ -29,22 +29,7 @@ const index = () => {
         <meta property="twitter:description" content="A personal portfolio page for connected to me! Just Someone who can work on in front or back. Sometimes design UI too. Just teach me by challenging me for a work!" />
         <meta property="twitter:image" content="https://www.alfianahar.com/og.jpg" />
       </Head>
-      <div className="flex flex-col items-center justify-center h-screen">
-        <span className="text-lg font-mono font-medium text-left mb-3">
-          Hello, I&apos;m
-        </span>
-        <h1 className="text-6xl font-semibold text-center ">
-          Alfian Nahar
-        </h1>
-        <p className="font-normal tracking-widest text-md text-center mt-3">
-          Energetic and Motivated Full Stack Developer
-        </p>
-        <Link href="/bio" >
-          <a className="button w-2/4 mt-12">
-            Go to My Bio
-          </a>
-        </Link>
-      </div>
+      <Hero />
     </>
   )
 }
