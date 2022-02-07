@@ -11,7 +11,7 @@ const Hero = () => {
             </h1>
             <p className="font-normal tracking-wider leading-6 text-sm mt-2 opacity-75">
             Energetic and Motivated Full Stack Developer. Always on exploring, learning, and practicing a new skill set. <br/>
-            Actively seeking a project or full-time job, TL:DR -> <span className="text-[#28C14C] font-medium">Open to Work!</span>
+            Actively seeking a project or full-time job, TL:DR -&gt; <span className="text-[#28C14C] font-medium">Open to Work!</span>
             </p>
             <Link href="/bio">
                 <a className="button mt-6">
