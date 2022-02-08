@@ -1,9 +1,18 @@
 import Link from "next/link";
 import Lottie from "react-lottie";
-import animationData from '../public/lotties/blogging-pixeltrue.json';
+import { useEffect, useState } from "react";
+
 
 
 const Hero = () => {
+  const [animationData, setAnimationData] = useState()
+
+  useEffect(() => {
+    import('../public/lotties/blogging-pixeltrue.json').then(setAnimationData)
+  }, [])
+
+  if (!animationData) return;
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -40,6 +49,7 @@ const Hero = () => {
           options={defaultOptions}
           ariaRole=""
           isClickToPauseDisabled={true}
+          on
         />
       </div>
     </div>
