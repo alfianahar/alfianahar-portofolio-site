@@ -1,13 +1,19 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const Avatar = () => {
-    return (
-        <div className="inline-flex relative">
-            <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-[#37cdbe] to-[#99FEFC] border-2 border-[#EFEFF6] ">
-                <Image src="/drink.jpg" alt="me" width={500} height={500} className="rounded-full" />
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="relative inline-flex">
+      <div className="h-24 w-24 rounded-full border-2 border-[#EFEFF6] bg-gradient-to-tr from-[#37cdbe] to-[#99FEFC] ">
+        <Image
+          src="/drink.jpg"
+          alt="me"
+          width={500}
+          height={500}
+          className="rounded-full"
+        />
+      </div>
+    </div>
+  );
+};
 
-export default Avatar
+export default Avatar;

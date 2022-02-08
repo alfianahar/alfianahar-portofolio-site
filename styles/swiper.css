@@ -164,7 +164,7 @@
   border-radius: 10px;
   position: relative;
   -ms-touch-action: none;
-  background: #EFEFF6;
+  background: #efeff6;
 }
 .swiper-horizontal > .swiper-scrollbar {
   position: absolute;
@@ -186,7 +186,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  background: #7CB8FC;
+  background: #7cb8fc;
   border-radius: 10px;
   left: 0;
   top: 0;

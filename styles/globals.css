@@ -3,67 +3,67 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css');
+@import url("https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css");
 
 @layer components {
   .bio-background {
-    @apply bg-[#14273E] h-screen md:w-[32rem] md:h-[85%] lg:h-[80%] tall:h-screen shadow-2xl shadow-[#EFEFF6]/50 md:rounded-xl;
+    @apply h-screen bg-[#14273E] shadow-2xl shadow-[#EFEFF6]/50 md:h-[85%] md:w-[32rem] md:rounded-xl lg:h-[80%] tall:h-screen;
   }
   .bio-logo {
-    @apply opacity-10 py-12 h-full flex items-center lg:items-end ;
+    @apply flex h-full items-center py-12 opacity-10 lg:items-end;
   }
   .bio-page {
-    @apply w-screen px-6 pt-16 pb-14 font-semibold flex flex-col justify-start items-center text-center;
+    @apply flex w-screen flex-col items-center justify-start px-6 pt-16 pb-14 text-center font-semibold;
   }
   .bio-main-layout {
-    @apply overflow-y-auto h-[60%] p-1 w-full md:w-5/6 lg:w-4/6 flex flex-col;
+    @apply flex h-[60%] w-full flex-col overflow-y-auto p-1 md:w-5/6 lg:w-4/6;
   }
   .button {
-    @apply flex flex-row items-center justify-center text-center font-medium w-full h-12 p-3 rounded-xl bg-gradient-to-tr text-[#040c15] from-[#7CB8FC] to-[#3E6BB5] hover:ring-4 transition ease-out mb-6 shadow-lg shadow-[#3E6BB5]/40;
+    @apply mb-6 flex h-12 w-full flex-row items-center justify-center rounded-xl bg-gradient-to-tr from-[#7CB8FC] to-[#3E6BB5] p-3 text-center font-medium text-[#040c15] shadow-lg shadow-[#3E6BB5]/40 transition ease-out hover:ring-4;
   }
   .button-resume {
-    @apply border-2 border-[#7CB8FC] text-[#7CB8FC] rounded-lg text-lg py-4 px-8 lg:py-2 lg:px-4 lg:text-sm font-mono hover:bg-[#3E6BB5]/20 transition;
+    @apply rounded-lg border-2 border-[#7CB8FC] py-4 px-8 font-mono text-lg text-[#7CB8FC] transition hover:bg-[#3E6BB5]/20 lg:py-2 lg:px-4 lg:text-sm;
   }
   .main-header {
-    @apply z-50 fixed flex justify-center items-center px-6 md:px-12 h-24 w-full;
+    @apply fixed z-50 flex h-24 w-full items-center justify-center px-6 md:px-12;
   }
   .main-layout {
-    @apply flex flex-col items-center justify-center h-screen gap-4 p-6;
+    @apply flex h-screen flex-col items-center justify-center gap-4 p-6;
   }
   .main-footer {
-    @apply flex flex-col justify-center items-center p-4;
+    @apply flex flex-col items-center justify-center p-4;
   }
   .navbar {
-    @apply flex items-center justify-between w-full h-10 font-mono;
+    @apply flex h-10 w-full items-center justify-between font-mono;
   }
   .navbar-logo {
-    @apply w-12 h-12 rounded-full bg-gradient-to-tr from-[#7CB8FC] to-[#3E6BB5] flex items-center;
+    @apply flex h-12 w-12 items-center rounded-full bg-gradient-to-tr from-[#7CB8FC] to-[#3E6BB5];
   }
   .navbar-side {
-    @apply transform transform-gpu flex flex-col justify-center items-center space-y-10 transition duration-300 ease-in-out h-screen bg-[#14273E] fixed right-0 top-0 py-10 w-3/4 md:w-2/4 -translate-x-0 text-lg shadow-[-10px_0px_25px_-15px_#3E6BB5];
+    @apply fixed right-0 top-0 flex h-screen w-3/4 -translate-x-0 transform transform-gpu flex-col items-center justify-center space-y-10 bg-[#14273E] py-10 text-lg shadow-[-10px_0px_25px_-15px_#3E6BB5] transition duration-300 ease-in-out md:w-2/4;
   }
   .navbar-side-lg {
-    @apply relative translate-x-0 h-full inline-flex flex-row space-x-10 text-sm space-y-0 py-0 items-center justify-end w-full shadow-none bg-none;
+    @apply relative inline-flex h-full w-full translate-x-0 flex-row items-center justify-end space-x-10 space-y-0 bg-none py-0 text-sm shadow-none;
   }
   .blur-effect {
-    @apply w-screen h-screen backdrop-blur-sm absolute inset-0 bg-[#0a162c]/70 transition ease-linear;
+    @apply absolute inset-0 h-screen w-screen bg-[#0a162c]/70 backdrop-blur-sm transition ease-linear;
   }
   .icon-transition {
-    @apply transform transition duration-300 ease-in-out absolute right-0;
+    @apply absolute right-0 transform transition duration-300 ease-in-out;
   }
 }
 
 * {
   scroll-behavior: smooth;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 *::-webkit-scrollbar {
-  display: none ;
+  display: none;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #14273E;
-  color: #EFEFF6;
+  background-color: #14273e;
+  color: #efeff6;
 }
