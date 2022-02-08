@@ -2,8 +2,6 @@ import Link from "next/link";
 import Lottie from "react-lottie";
 import { useEffect, useState } from "react";
 
-
-
 const Hero = () => {
   const [animationData, setAnimationData] = useState()
 
@@ -11,7 +9,7 @@ const Hero = () => {
     import('../public/lotties/blogging-pixeltrue.json').then(setAnimationData)
   }, [])
 
-  if (!animationData) return;
+  if (!animationData) return <div></div>;
 
   const defaultOptions = {
     loop: true,
