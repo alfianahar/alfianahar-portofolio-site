@@ -17,7 +17,8 @@ Every update of my projets or experience will written here</p>
 1. [x] Bio Page for every socmed
 2. [ ] Main Page
     - [x] Footer (maybe need improvement)
-    - [ ] Hero Section
+    - [x] Hero Section
+    - [ ] About Section
     - [ ] Project Section
 - [x] Domain
 

@@ -7,7 +7,7 @@
 
 @layer components {
   .bio-background {
-    @apply h-screen bg-[#14273E] shadow-2xl shadow-[#EFEFF6]/50 md:h-[85%] md:w-[32rem] md:rounded-xl lg:h-[80%] tall:h-screen;
+    @apply tall:h-screen h-screen bg-[#14273E] shadow-2xl shadow-[#EFEFF6]/50 md:h-[85%] md:w-[32rem] md:rounded-xl lg:h-[80%];
   }
   .bio-logo {
     @apply flex h-full items-center py-12 opacity-10 lg:items-end;
@@ -28,7 +28,7 @@
     @apply fixed z-50 flex h-24 w-full items-center justify-center px-6 md:px-12;
   }
   .main-layout {
-    @apply flex h-screen flex-col items-center justify-center gap-4 p-6;
+    @apply flex h-screen flex-col items-center justify-center gap-4 p-6 lg:pl-24;
   }
   .main-footer {
     @apply flex flex-col items-center justify-center p-4;
