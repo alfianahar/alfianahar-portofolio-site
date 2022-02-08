@@ -9,8 +9,6 @@ const Hero = () => {
     import('../public/lotties/blogging-pixeltrue.json').then(setAnimationData)
   }, [])
 
-  if (!animationData) return <div></div>;
-
   const defaultOptions = {
     loop: true,
     autoplay: true,
