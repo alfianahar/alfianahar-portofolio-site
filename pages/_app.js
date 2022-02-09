@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps, router }) {
     <Layout>
       <Script
         src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
       <Component {...pageProps} />
     </Layout>
