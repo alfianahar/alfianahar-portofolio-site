@@ -2,23 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-function useOnClickOutside(ref, handler) {
-  useEffect(() => {
-    const listener = (event) => {
-      if (!ref.current || ref.current.contains(event.target)) {
-        return;
-      }
-      handler(event);
-    };
-    document.addEventListener("mousedown", listener);
-    document.addEventListener("touchstart", listener);
-    return () => {
-      document.removeEventListener("mousedown", listener);
-      document.removeEventListener("touchstart", listener);
-    };
-  }, [ref, handler]);
-}
-
 const Navbar = () => {
   const ref = useRef();
   const [open, setOpen] = useState(false);
@@ -80,8 +63,8 @@ const Navbar = () => {
               src="/an-logo.svg"
               alt="logo AN"
               layout="intrinsic"
-              width={100}
-              height={68.92}
+              width="100"
+              height="68.92"
               className="rounded-full"
             />
           </a>
@@ -120,3 +103,20 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+function useOnClickOutside(ref, handler) {
+  useEffect(() => {
+    const listener = (event) => {
+      if (!ref.current || ref.current.contains(event.target)) {
+        return;
+      }
+      handler(event);
+    };
+    document.addEventListener("mousedown", listener);
+    document.addEventListener("touchstart", listener);
+    return () => {
+      document.removeEventListener("mousedown", listener);
+      document.removeEventListener("touchstart", listener);
+    };
+  }, [ref, handler]);
+}

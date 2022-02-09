@@ -67,3 +67,19 @@ body {
   background-color: #14273e;
   color: #efeff6;
 }
+
+nav[data-active="true"] {
+  box-shadow: 0 10px 15px rgba(152, 168, 188, 0.2);
+  background-color: #d7e5e9;
+  padding-top: 20px;
+  top: 0;
+  transition: all 0.4s ease;
+}
+
+nav[data-active="false"] {
+  transition: all 0.4s ease;
+}
+
+.links a[data-active="true"] {
+  color: #001b2e;
+}
