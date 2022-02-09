@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className={`${open ? "blur-effect" : "absolute opacity-0"}`}></div>
+      <div className={`${open ? "blur-effect" : "absolute invisible"}`}></div>
       <div className="z-50 inline-flex w-11">
         <Link href="/">
           <a className="navbar-logo" onClick={closeMenu}>
