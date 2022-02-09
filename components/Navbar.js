@@ -43,6 +43,33 @@ const Navbar = () => {
     };
   }, [scrolled]);
 
+  const NavbarList = () => {
+    return (
+      <>
+        <Link href="">
+          <a onClick={closeMenu} className="">
+            About Me
+          </a>
+        </Link>
+        <Link href="">
+          <a onClick={closeMenu} className="">
+            My Work
+          </a>
+        </Link>
+        <Link href="">
+          <a onClick={closeMenu} className="">
+            Contact Me
+          </a>
+        </Link>
+        <Link href="/alfianahar-resume.pdf">
+          <a target="_blank" className="button-resume">
+            My Resume
+          </a>
+        </Link>
+      </>
+    )
+  };
+
   return (
     <nav className="navbar">
       <div className={`${open ? "blur-effect" : "absolute opacity-0"}`}></div>
@@ -62,16 +89,14 @@ const Navbar = () => {
       <div ref={ref} className="relative h-full">
         <div className="relative z-50 -mr-2 lg:hidden" onClick={handleClick}>
           <div
-            className={`${
-              open ? "-translate-x-12 opacity-0" : ""
-            } icon-transition`}
+            className={`${open ? "-translate-x-12 opacity-0" : ""
+              } icon-transition`}
           >
             <box-icon name="menu" color="#7CB8FC" size="48px"></box-icon>
           </div>
           <div
-            className={`${
-              open ? "" : "translate-x-12 opacity-0"
-            } icon-transition`}
+            className={`${open ? "" : "translate-x-12 opacity-0"
+              } icon-transition`}
           >
             <box-icon name="x" color="#7CB8FC" size="48px"></box-icon>
           </div>
@@ -80,31 +105,14 @@ const Navbar = () => {
         <aside
           ref={ref}
           data-active={scrolled}
-          className={`${
-            open ? "-translate-x-0" : "translate-x-[150%]"
-          } navbar-side lg:navbar-side-lg`}
+          className={`${open ? "-translate-x-0" : "translate-x-[150%]"
+            } navbar-side lg:hidden`}
         >
-          <Link href="">
-            <a onClick={closeMenu} className="">
-              About Me
-            </a>
-          </Link>
-          <Link href="">
-            <a onClick={closeMenu} className="">
-              My Work
-            </a>
-          </Link>
-          <Link href="">
-            <a onClick={closeMenu} className="">
-              Contact Me
-            </a>
-          </Link>
-          <Link href="/alfianahar-resume.pdf">
-            <a target="_blank" className="button-resume">
-              My Resume
-            </a>
-          </Link>
+          <NavbarList />
         </aside>
+      </div>
+      <div className="hidden lg:navbar-side-lg">
+        <NavbarList />
       </div>
     </nav>
   );
