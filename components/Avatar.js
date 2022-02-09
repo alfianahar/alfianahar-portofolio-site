@@ -7,8 +7,8 @@ const Avatar = () => {
         <Image
           src="/drink.jpg"
           alt="me"
-          width={500}
-          height={500}
+          width={100}
+          height={100}
           className="rounded-full"
         />
       </div>

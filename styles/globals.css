@@ -7,7 +7,7 @@
 
 @layer components {
   .bio-background {
-    @apply tall:h-screen h-screen bg-[#14273E] shadow-2xl shadow-[#EFEFF6]/50 md:h-[85%] md:w-[32rem] md:rounded-xl lg:h-[80%];
+    @apply h-screen bg-[#14273E] shadow-2xl shadow-[#EFEFF6]/50 md:h-[85%] md:w-[32rem] md:rounded-xl lg:h-[80%] tall:h-screen;
   }
   .bio-logo {
     @apply flex h-full items-center py-12 opacity-10 lg:items-end;
@@ -43,7 +43,7 @@
     @apply fixed right-0 top-0 flex h-screen w-3/4 -translate-x-0 transform transform-gpu flex-col items-center justify-center space-y-10 bg-[#14273E] py-10 text-lg shadow-[-10px_0px_25px_-15px_#3E6BB5] transition duration-300 ease-in-out md:w-2/4;
   }
   .navbar-side-lg {
-    @apply relative inline-flex h-full w-full translate-x-0 flex-row items-center justify-end space-x-10 space-y-0 bg-none py-0 text-sm shadow-none;
+    @apply inline-flex flex-row items-center justify-end space-x-10 py-0 text-sm shadow-none;
   }
   .blur-effect {
     @apply absolute inset-0 h-screen w-screen bg-[#0a162c]/70 backdrop-blur-sm transition ease-linear;

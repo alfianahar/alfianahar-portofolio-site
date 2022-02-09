@@ -79,6 +79,7 @@ const Navbar = () => {
             <Image
               src="/an-logo.svg"
               alt="logo AN"
+              layout="intrinsic"
               width={100}
               height={68.92}
               className="rounded-full"
