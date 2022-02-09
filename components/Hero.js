@@ -43,9 +43,7 @@ const Hero = () => {
       <div className="mt-9 lg:mt-14 lg:w-11/12 h-2/6 md:h-auto scale-110 md:scale-105">
         <Lottie
           options={defaultOptions}
-          ariaRole=""
           isClickToPauseDisabled={true}
-          on
         />
       </div>
     </div>

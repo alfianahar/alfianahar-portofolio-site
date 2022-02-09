@@ -8,23 +8,7 @@ const Navbar = () => {
   const handleClick = () => setOpen(!open);
   const closeMenu = () => setOpen(false);
   useOnClickOutside(ref, () => setOpen(false));
-  const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      if (isScrolled !== scrolled) {
-        setScrolled(!scrolled);
-      }
-    };
-
-    document.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      // clean up the event handler when the component unmounts
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrolled]);
 
   const NavbarList = () => {
     return (
@@ -88,7 +72,6 @@ const Navbar = () => {
 
         <aside
           ref={ref}
-          data-active={scrolled}
           className={`${open ? "-translate-x-0" : "translate-x-[150%]"
             } navbar-side lg:hidden`}
         >
