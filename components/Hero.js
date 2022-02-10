@@ -19,7 +19,7 @@ const Hero = () => {
   }
 
   return (
-    <div className="flex h-screen flex-col lg:flex-row justify-start items-center" >
+    <section className="flex h-screen flex-col lg:flex-row justify-start items-center" >
       <div className="flex flex-col md:w-4/5 mt-4 lg:-mr-24 ">
         <span className="font-mono text-xs md:text-sm font-medium leading-7 md:leading-8 text-[#7CB8FC]">
           Get to know me, I&apos;m
@@ -47,7 +47,7 @@ const Hero = () => {
           isClickToPauseDisabled={true}
         />
       </div>
-    </div>
+    </section>
 
   );
 };
