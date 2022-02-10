@@ -5,10 +5,40 @@ import Link from "next/link";
 const Navbar = () => {
   const ref = useRef();
   const [open, setOpen] = useState(false);
+  const [navMobile, setNavMobile] = useState(<div></div>)
   const handleClick = () => setOpen(!open);
   const closeMenu = () => setOpen(false);
   useOnClickOutside(ref, () => setOpen(false));
+  const addNav = () => setNavMobile(
+    <div ref={ref} className="relative h-full">
+      <div className="relative z-50 -mr-2 lg:hidden" onClick={handleClick}>
+        <div
+          className={`${open ? "-translate-x-12 opacity-0" : ""
+            } icon-transition`}
+        >
+          <box-icon name="menu" color="#7CB8FC" size="48px"></box-icon>
+        </div>
+        <div
+          className={`${open ? "" : "translate-x-12 opacity-0"
+            } icon-transition`}
+        >
+          <box-icon name="x" color="#7CB8FC" size="48px"></box-icon>
+        </div>
+      </div>
 
+      <aside
+        ref={ref}
+        className={`${open ? "-translate-x-0" : "translate-x-[150%]"
+          } navbar-side lg:hidden`}
+      >
+        <NavbarList />
+      </aside>
+    </div>
+  )
+
+  useEffect(() => {
+    addNav()
+  }, [])
 
   const NavbarList = () => {
     return (
@@ -54,30 +84,7 @@ const Navbar = () => {
           </a>
         </Link>
       </div>
-      <div ref={ref} className="relative h-full">
-        <div className="relative z-50 -mr-2 lg:hidden" onClick={handleClick}>
-          <div
-            className={`${open ? "-translate-x-12 opacity-0" : ""
-              } icon-transition`}
-          >
-            <box-icon name="menu" color="#7CB8FC" size="48px"></box-icon>
-          </div>
-          <div
-            className={`${open ? "" : "translate-x-12 opacity-0"
-              } icon-transition`}
-          >
-            <box-icon name="x" color="#7CB8FC" size="48px"></box-icon>
-          </div>
-        </div>
-
-        <aside
-          ref={ref}
-          className={`${open ? "-translate-x-0" : "translate-x-[150%]"
-            } navbar-side lg:hidden`}
-        >
-          <NavbarList />
-        </aside>
-      </div>
+      {navMobile}
       <div className="hidden lg:navbar-side-lg">
         <NavbarList />
       </div>
