@@ -12,7 +12,7 @@ const Navbar = () => {
   const NavbarList = () => {
     return (
       <>
-        <Link href="">
+        {/* <Link href="">
           <a onClick={closeMenu} className="">
             About Me
           </a>
@@ -21,10 +21,10 @@ const Navbar = () => {
           <a onClick={closeMenu} className="">
             My Work
           </a>
-        </Link>
-        <Link href="">
+        </Link> */}
+        <Link href="/bio">
           <a onClick={closeMenu} className="">
-            Contact Me
+            Biopage
           </a>
         </Link>
         <Link href="/alfianahar-resume.pdf">
@@ -39,17 +39,19 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className={`${open ? "blur-effect" : "absolute invisible"}`}></div>
-      <div className="z-50 inline-flex w-11">
+      <div className="z-50 inline-flex">
         <Link href="/">
           <a className="navbar-logo" onClick={closeMenu}>
-            <Image
-              src="/an-logo.svg"
-              alt="logo AN"
-              layout="intrinsic"
-              width="100"
-              height="68.92"
-              className="rounded-full"
-            />
+            <span className="block w-full">
+              <Image
+                src="/an-logo.svg"
+                alt="logo AN"
+                layout="responsive"
+                width="100"
+                height="68.92"
+                className="rounded-full"
+              />
+            </span>
           </a>
         </Link>
       </div>
