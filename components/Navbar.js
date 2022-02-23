@@ -27,7 +27,7 @@ const Navbar = () => {
             Biopage
           </a>
         </Link>
-        <Link href="/alfianahar-resume.pdf">
+        <Link href="/alfianahar-resume-v.1.2.pdf">
           <a target="_blank" className="button-resume">
             My Resume
           </a>
