@@ -12,16 +12,7 @@ const Navbar = () => {
   const NavbarList = () => {
     return (
       <>
-        {/* <Link href="">
-          <a onClick={closeMenu} className="">
-            About Me
-          </a>
-        </Link>
-        <Link href="">
-          <a onClick={closeMenu} className="">
-            My Work
-          </a>
-        </Link> */}
+
         <Link href="/bio">
           <a onClick={closeMenu} className="">
             Biopage
